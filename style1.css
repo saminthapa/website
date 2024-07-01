@@ -31,8 +31,8 @@ nav{
 
 
 .img{
-   margin-left: 250px;
-    margin-top: 100px;
+    margin-left: 250px;
+   margin-top: -150px;
 }
 nav ul {
     position: fixed;
@@ -154,8 +154,11 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
-
-
+.certificate{
+    color: #00fbff;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 #services{
     padding: 30px 0;
@@ -285,7 +288,7 @@ nav ul li a:hover::after{
     border-radius: 6px;
     text-decoration: none;
     color: #d9dfdb;
-    
+    cursor: pointer;   
 }
 .btn:hover{
     border: #ff004f;
@@ -432,6 +435,9 @@ footer a {
 nav .fas{
     display: none;
 }
+nav .fa-solid{
+    display: none;
+}
 
 
 
@@ -440,15 +446,15 @@ nav .fas{
 
 
 
-@MEDIA only screen and (max-width:600px ){
+@MEDIA only screen and (max-width:650px ){
     #header{
         margin-left: -20px;  
     }
     .img{
-        height: 200px;
-        width: 200px;
-        margin-left: 70px;
-        margin-top: 50px;
+        height: 400px;
+        width: 400px;
+        margin-left: 0px;
+        margin-top: -100px;
     background-position:center;
     
     }
@@ -467,11 +473,15 @@ nav .fas{
     .header-text h1 span{
         color: #ff004f;
     }
-    nav .fas{
+    nav .fa-solid{
         background-color: #23bfe6;
           display: block;
           font-size: 25px;
-  
+      }
+    nav .fas{
+        background-color: #080808;
+          display: block;
+          font-size: 25px;  
       }
       nav i{
         color: aqua;
@@ -480,14 +490,12 @@ nav .fas{
         margin-left: 100%;
       }
       nav ul{
-       
-        background: #c83445;
+        background: #1a1212;
         position: fixed;
-        top: 0;
-       
+        top: 0; 
         right: -200px;
         width: 200px;
-        height: 50vh;
+        height: 51vh;
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
@@ -496,6 +504,12 @@ nav .fas{
         text-decoration-color: antiquewhite;
          display: block;
          margin: 25px;
+     }
+     nav ul .fa-solid{
+        color: #fff;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;        
      }
      nav ul .fas{
         color: #fff;

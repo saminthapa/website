@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style1.css">
     <!-- Option 1: Include in HTML -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div id="header">
@@ -15,27 +16,25 @@
             <li><a href="#header"><img src="./logo.png" class="logo"></a></li>
             
             <ul id="sidemenu">
-                <i class="bi bi-x" onclick="closemenu()"></i>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>               
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact"><span>Contact</span></a></li> 
-                
-                
             </ul>
-            <i class="bi bi-list" onclick="openmenu()"></i>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
 
-            <img class="img" src="./C3.png"
+            <img class="img" src="./a.png"
              
-            width="450px";
-            height="450px" ;
+            width="600px";
+            height="750px";
             background-size="cover";
             background-position="center";>
             </nav>
             <div class="header-text">
-                <p>Full-Stack Developer / Mentor</p>
+                <p>Full-Stack Developer</p>
                 <h1>Namaste!!, I'm <span>Samin <br>Thapa Kshetry</span> From Nepal</h1>
             </div>
         </div>
@@ -52,35 +51,38 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Hi! I'm doing Bachelor of Information Technology from Tribhuvan University and my specialization is Web-App. Development. I’m a technology enthusiast and wish to use my technical acumen to contribute to a team that works at skill and also creates a positive impact in society. </p>
+                    <p>Hi! I am pursuing a Bachelor of Information technology from Tribhuvan University and my specialization is Web. Development.. As a technology enthusiast, I aim to leverage my technical skills to contribute to a team that not only excels in its field but also creates a positive impact on society.</p>
 
                     <div class="tab-title">
                         <p class="tab-links active-link" onclick="opentab('skill')">Skill</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certificate')">Certificate</p>
                     </div>
                     <div class="tab-contents active-tab" id="skill">
                         <ul>
-                            <li><span>Mentor</span><br>Website Development</li>
-                            <li><span>Front-End Development</span><br>React.js, JavaScript, Bootstrap, TailwindCSS, HTML and CSS</li>
+                            <li><span>Front-End Development</span><br>JavaScript, HTML and CSS, React.js, Bootstrap, TailwindCSS</li>
                             <li><span>Back-End Development</span><br>Node.js, Express.js</li>
                             <li><span>Data Base</span><br>MongoDB</li>
-                            <li><span>Full-Stack Development</span><br>MongoDB, Express.js, React.js, Node.js (MERN)</li>
+                            <li><span>Other Languages</span><br>Python, Scratch, C</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2023 - Current</span><br>Freelancer as Web/App Developer</li>
-                            <li><span>2020 - 2023</span><br>Accountant</li>
+                            <li><span>2023 - Current</span><br>Freelancer as Web. Developer</li>
                             <li><span>2019 - 2020</span><br>Advance Computer Course</li>
                             <li><span>2018 - 2019</span><br>National Cadet Crops</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2023 - Current</span><br>Bachelor of Information Technology</li>
-                            <li><span>2019 - 2021</span><br>+2 at Computer Science</li>
-                            <li><span>2019 - 2020</span><br>Advance Computer Course</li>
+                            <li><span>2023 - Current</span><br>Bachelor of Information Technology, TU</li>
+                            <li><span>2019 - 2021</span><br>+2 at Computer Science, NEB</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificate">
+                        <ul>
+                            <li><span>Web Development Bootcamp -> </span><a class="certificate" href="./hp_boot.pdf"> View</a></li>
                         </ul>
                     </div>
                 </div>
@@ -95,14 +97,14 @@
                 <div>
                     <i class="bi bi-book-half"></i>
                     <h1>Website Development</h1> <br>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I can turn your website idea into a reality. I can develop quality website for you and your bussiness , so that you can save your valuable time.</p><br>          
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I can turn your website ideas into reality, developing high-quality responsive websites for you and your business. Let me help you save valuable time</p><br>          
                         <a href="#contact">Contact Me</a>
                                               
                 </div>
                 <div>
                     <i class="bi bi-bookmarks-fill"></i>
                     <h1>Mentor</h1> <br>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I can be your or your Company's truthfull Mentor as a Website Developer.</p><br>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I can serve as a trustworthy mentor for you or your company in website development.</p><br>
                     <a href="#contact">Contact Me</a>
                    
                 </div>
@@ -113,8 +115,20 @@
 
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>    
+        <h1 class="sub-title">My Project</h1>    
         <div class="work-list">
+
+            <div class="work">
+                <img src="./stk_blog.jpeg">
+                <div class="layer">
+                    <h2>STK BLOG</h2>
+                    <h4>Developed a blog website using React.js for
+                        frontend and responsive design. Working on Backend using
+                        Node.js and MongoDB<br> <br>You can look through below link.</h4>
+                <a href="https://saminthapa-stk-blog.netlify.app/"><i class="bi bi-link"></i></a>
+                </div>
+            </div>
+
             <div class="work">
                 <img src="./TTT.png" >
             <div class="layer">
@@ -123,7 +137,19 @@
                 <h4>This is a TIC_TAC_TOE game project on React.js using useState, useEffect Hook. <br> <br>You can play through below link.</h4>
             <a href="https://saminthapa-tic-tac-toe.netlify.app/"><i class="bi bi-link"></i></a>
             </div>
+        </div>
+        
+        <div class="work">
+            <img src="./destiny.jpeg">
+            <div class="layer">
+                <h2>Destiny Films</h2>
+                <h4>Created a responsive website for a Photography
+                    and Videography Studio . Implemented gallery and contact form
+                    functionalities.<br> <br>You can look through below link.</h4>
+            <a href="https://saminthapa-destiny-films.netlify.app/"><i class="bi bi-link"></i></a>
             </div>
+        </div>
+
             <div class="work">
                 <img src="./PW.png" >
             <div class="layer">
@@ -150,16 +176,9 @@
                 </div>
             </div>
           
-            <div class="work">
-                <img src="./TDL.png">
-                <div class="layer">
-                    <h2> Todo List</h2>
-                    <h4>This is a Todo List project on React.js using useState Hook and map function. <br> <br>You can look through below link.</h4>
-                <a href="https://saminthapa-todolist.netlify.app/"><i class="bi bi-link"></i></a>
-                </div>
-            </div>
+            
         </div>
-        <a href="https://github.com/saminthapa" class="btn">See More</a>
+        <a href="./project.html" class="btn">See More</a>
     </div>
 </div> 
 
@@ -204,7 +223,7 @@
                     <a href="https://www.youtube.com/channel/UC2cIebOuovVdBCD4rKOIiWQ"><i class="bi bi-youtube"></i></a>
                     <a href="https://github.com/saminthapa"><i class="bi bi-github"></i></a>
                 </div>
-               <!--- <a href="./cv.pdf" download  class="btn btn2"><i class="bi bi-file-earmark-arrow-down-fill"></i>  View CV </a>               -->
+                <a href="./Samin_Resume.pdf" download  class="btn btn2"><i class="bi bi-file-earmark-arrow-down-fill"></i> Download Resume</a>              
             </div>
             <div class="contact-right">
                 <form action="https://api.web3forms.com/submit" method="POST" class="form">
@@ -238,6 +257,17 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
   </script> 
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";        
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";        
+    }
+  </script>
  
 </body>
 </html>
